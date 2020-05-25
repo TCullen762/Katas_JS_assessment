@@ -5,27 +5,59 @@ function add(x, y) {
     return x + y
 }
 
-const addingThing = add(3,4)//global scope...should work
+let  addThis = add(2,4)//global scope...should work
 
-console.log('The answer to number one is :' + ' ' + addingThing)
+console.log('The answer to number one is :' + ' ' + addThis)
 
 
-//number two multiply
-let mathArray =[]
-function multiply(a, b){
-   
-    //for(let counter = 2; 0 <= mathArray.length; counter += 5)
-    return a + b 
-    
+
+//use add function to add the input variables - how in the fuck?
+
+
+function multiply(a,b){
+    let korvo = a
+    for(var i = 0; i < b - 1; i++){
+      korvo += a
+    }
+    return korvo 
+
 }
-const multiplyThing = multiply(2,5)
-mathArray.push(multiplyThing)
 
-console.log(mathArray)
-console.log("it is not working!!")
 
-/*Write a function named "multiply" which takes two arguments (as input variables) and returns their product.
 
-You may not use built-in math operators or functions (such as the * multiplication operator). Instead, you will use a FOR loop which calls your add function from the first kata.
+    /* need a vairiable that will stack and result in 24 
+ function multiply(a,b){
+  let korvo = a   
+for( let i = 0; i <= korvo ; i ++) { 
+ a += i
+return korvo 
 
-For example, calling multiply(6, 4) should return a result of 24, which could be expressed by adding 6 to itself 4 times:*/
+}
+// only returning the value on a ....damn!
+}
+*/
+let multiplyThisthing= multiply(add(2,5),5)   
+console.log(multiplyThisthing)
+
+console.log('The answer to number one is :' + ' ' + multiplyThisthing) //how is this working?
+
+console.log('but how did it work?')
+
+
+
+
+
+//how in the fuck is this working?
+/*sthe following was taken from medium.com and used for refference and reverse engineering only//
+
+function multiply(a, b){
+    console.log('goddamnit!!')
+    let answer = a
+    for(var i = 0; i < b - 1; i++){
+      answer += a
+    }
+    return answer 
+    
+  }
+
+*/
