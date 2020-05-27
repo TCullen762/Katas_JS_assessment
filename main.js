@@ -11,20 +11,6 @@ console.log('The answer to number one is :' + ' ' + addThis)
 
 
 
-//use add function to add the input variables
-// creat array push add function into the array loop array need to make array length equal to one of  the multiply values
-
-
- /*function multiply(a,b
- 
-  let korvoArray=[]
-  korvoArray.push.add(x,y)
-  for(let index =0; index <= korvoArray.length; i ++){
-  index+= 1}
-  
-  console.log(korvoArray)
-
-}*/
 
   
 function multiply(a,b){
@@ -36,7 +22,7 @@ function multiply(a,b){
 }
 
 let multiplyThisThing= multiply(2,5)   
-console.log(multiplyThisThing)
+//console.log(multiplyThisThing)
 
 console.log('The answer to number two is :' + ' ' + multiplyThisThing) 
 
@@ -65,13 +51,6 @@ console.log('The answer to number three is :' + ''+  morePower)
 let noFacts = factorial(5)
 
 
-console.log(noFacts)
+console.log('The answer to number four is:' + '' + noFacts)
 
-/*function fibonacci (x) {
-  let beth = 0 
-  for( let index = 0; index < x ; index ++){
-  Beth = ...
-  }
-  return beth
-}*/
 
